@@ -2,14 +2,14 @@
 
 import gi
 
-gi require_version('Gtk','3.0')
+gi.require_version('Gtk','3.0')
 from gi.repository import Gtk
 from gi.repository import GLib
 from gi.repository import cairo
 import random
 
-import manejo_de_piezas
-tuplas = manejo_de_piezas.tuplas
+import tetris_pieces
+tuple_add = tetris_pieces.tuple_add  # too useful to call by namespace
 
 DOT_SIZE = 30
 ROWS = 18
